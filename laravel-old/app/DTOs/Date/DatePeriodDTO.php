@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DTO\Date;
+namespace App\DTOs\Date;
 
 class DatePeriodDTO
 {

@@ -10,7 +10,7 @@ use Illuminate\Http\Response;
 use Illuminate\Support\MessageBag;
 use Symfony\Component\HttpFoundation\Response as HTTP;
 
-abstract class BaseController
+abstract class BaseController extends Controller
 {
     abstract protected function rulesInsert(): array;
     abstract protected function rulesUpdate(): array;
@@ -20,6 +20,7 @@ abstract class BaseController
     public function index(): JsonResponse
     {
         try {
+            dd("aaa");
             $find = $this->getService()->findAll();
             $itens = $this->getResource()->arrayDtoToVoItens($find);
             return response()->json($itens, HTTP::HTTP_OK);

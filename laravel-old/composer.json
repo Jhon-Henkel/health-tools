@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel/heatlt-tools",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {

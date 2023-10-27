@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Route;
 /** @var Route $router */
 $router->prefix('/')->group(function ($router) {
     $router->prefix('blood-pressure')->group(function () use ($router) {
-        $router->get('', [BloodPressureController::class, 'index'])->name(RouteEnum::API_BLOOD_PRESSURE_INDEX);
+        $router->get('', function () {dd("ssss");})->name(RouteEnum::API_BLOOD_PRESSURE_INDEX);
     });
-    $router->prefix('blood-glucose')->group(function () use ($router) {
-
-    });
+//    $router->prefix('blood-glucose')->group(function () use ($router) {
+//
+//    });
 });
