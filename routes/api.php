@@ -1,19 +1,15 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Enum\RouteEnum;
+use App\Http\Controllers\BloodPressure\BloodPressureController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
+/** @var Route $router */
+$router->prefix('/')->group(function ($router) {
+    $router->prefix('blood-pressure')->group(function () use ($router) {
+        $router->get('', [BloodPressureController::class, 'index'])->name(RouteEnum::API_BLOOD_PRESSURE_INDEX);
+    });
+    $router->prefix('blood-glucose')->group(function () use ($router) {
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+    });
 });
