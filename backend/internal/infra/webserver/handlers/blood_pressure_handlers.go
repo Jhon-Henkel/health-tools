@@ -39,7 +39,7 @@ func (b *BloodPressureHandler) CreateBloodPressure(w http.ResponseWriter, r *htt
 		json.NewEncoder(w).Encode(error)
 		return
 	}
-	_, err = b.BloodPressureDB.Create(dataToInsert)
+	err = b.BloodPressureDB.Create(dataToInsert)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		error := Error{Message: err.Error()}

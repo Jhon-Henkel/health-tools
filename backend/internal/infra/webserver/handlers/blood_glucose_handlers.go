@@ -15,7 +15,6 @@ type BloodGlucoseHandler struct {
 	BloodGlucoseDB database.BloodGlucoseInterface
 }
 
-
 func NewBloodGlucoseHandler(db database.BloodGlucoseInterface) *BloodGlucoseHandler {
 	return &BloodGlucoseHandler{BloodGlucoseDB: db}
 }
@@ -36,7 +35,7 @@ func (b *BloodGlucoseHandler) CreateBloodGlucose(w http.ResponseWriter, r *http.
 		json.NewEncoder(w).Encode(error)
 		return
 	}
-	_, err = b.BloodGlucoseDB.Create(dataToInsert)
+	err = b.BloodGlucoseDB.Create(dataToInsert)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		error := Error{Message: err.Error()}
