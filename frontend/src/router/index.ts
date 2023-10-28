@@ -12,7 +12,11 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/pressao',
-    component: () => import('@/views/BloodPressure.vue')
+    component: () => import('@/views/BloodPressure/BloodPressureView.vue')
+  },
+  {
+    path: '/pressao/registrar',
+    component: () => import('@/views/BloodPressure/BloodPressureForm.vue')
   }
 ]
 
