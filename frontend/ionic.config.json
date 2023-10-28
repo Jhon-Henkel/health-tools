@@ -1,0 +1,7 @@
+{
+  "name": "Health Tools",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
