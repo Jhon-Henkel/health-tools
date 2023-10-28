@@ -25,7 +25,7 @@ Backend desenvolvido em GO para disponibilizar uma API controle de pressão arte
     {
         "id": 1,
         "blood_glucose": 100,
-        "date": "2021-01-01T00:00:00Z"
+        "created_at": "2021-01-01T00:00:00Z"
     }
     ```
 
@@ -36,6 +36,6 @@ Backend desenvolvido em GO para disponibilizar uma API controle de pressão arte
         "systolic": 100,
         "diastolic": 100,
         "pulse": 100,
-        "date": "2021-01-01T00:00:00Z"
+        "created_at": "2021-01-01T00:00:00Z"
     }
     ```
