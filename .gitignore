@@ -1,4 +1,2 @@
 .idea
-cmd/server/.env
-.docker
-.env
+.DS_Store
