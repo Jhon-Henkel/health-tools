@@ -1,3 +1,4 @@
 .idea
 cmd/server/.env
 .docker
+.env
