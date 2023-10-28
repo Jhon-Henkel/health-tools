@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	dsn := config.DbUser + ":" + config.DbPassword + "@tcp(" + config.DbHost + ":" + config.DbPort + ")/" + config.DbName
+	dsn := config.DbUser + ":" + config.DbPassword + "@tcp(" + config.DbHost + ":" + config.DbPort + ")/" + config.DbName + "?parseTime=true"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err)
