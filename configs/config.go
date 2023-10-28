@@ -1,6 +1,7 @@
 package configs
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/go-chi/jwtauth"
@@ -29,6 +30,7 @@ func LoadConfig(path string) (*config, error) {
 	viper.AutomaticEnv()
 	err := viper.ReadInConfig()
 	if err != nil {
+		fmt.Println("No config file loaded - using env variables")
 		cfg.DbDriver = os.Getenv("DB_DRIVER")
 		cfg.DbHost = os.Getenv("DB_HOST")
 		cfg.DbPort = os.Getenv("DB_PORT")
