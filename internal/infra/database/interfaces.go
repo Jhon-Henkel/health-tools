@@ -1,6 +1,6 @@
 package database
 
-import "github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/entity"
+import "github.com/Jhon-Henkel/health-tools/tree/main/internal/entity"
 
 type BloodPressureInterface interface {
 	Create(bloodPressure *entity.BloodPressure) error

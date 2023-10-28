@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/entity"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/entity"
 	"gorm.io/gorm"
 )
 

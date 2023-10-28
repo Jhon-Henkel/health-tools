@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/dto"
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/entity"
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/infra/database"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/dto"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/entity"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/infra/database"
 	"github.com/go-chi/chi/v5"
 )
 

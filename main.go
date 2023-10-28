@@ -3,10 +3,10 @@ package main
 import (
 	"net/http"
 
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/configs"
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/entity"
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/infra/database"
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/infra/webserver/handlers"
+	"github.com/Jhon-Henkel/health-tools/tree/main/configs"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/entity"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/infra/database"
+	"github.com/Jhon-Henkel/health-tools/tree/main/internal/infra/webserver/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"gorm.io/driver/mysql"

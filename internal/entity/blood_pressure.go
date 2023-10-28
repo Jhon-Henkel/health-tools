@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Jhon-Henkel/health-tools/tree/main/backend/pkg/entity"
+	"github.com/Jhon-Henkel/health-tools/tree/main/pkg/entity"
 )
 
 type BloodPressure struct {
