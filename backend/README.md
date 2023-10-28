@@ -3,6 +3,7 @@
 Backend desenvolvido em GO para disponibilizar uma API controle de pressão arterial e glicemia.
 
 ## Como rodar
+- Pelo ternial acesse: `cd cmd/server`
 - Execute: `go run main.go`
 
 ## Rotas
