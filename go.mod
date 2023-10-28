@@ -1,4 +1,4 @@
-module github.com/Jhon-Henkel/health-tools/tree/main
+module github.com/Jhon-Henkel/health-tools/tree/main/backend
 
 go 1.21.0
 

@@ -3,7 +3,7 @@ package database
 import (
 	"testing"
 
-	"github.com/Jhon-Henkel/health-tools/tree/main/internal/entity"
+	"github.com/Jhon-Henkel/health-tools/tree/main/backend/internal/entity"
 	"github.com/stretchr/testify/assert"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
