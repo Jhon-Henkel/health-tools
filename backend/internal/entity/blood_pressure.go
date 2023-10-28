@@ -8,25 +8,25 @@ import (
 )
 
 type BloodPressure struct {
-	ID entity.ID `json:"id"`
-	Systolic int `json:"systolic"`
-	Diastolic int `json:"diastolic"`
-	Pulse int `json:"pulse"`
+	ID        entity.ID `json:"id"`
+	Systolic  int       `json:"systolic"`
+	Diastolic int       `json:"diastolic"`
+	Pulse     int       `json:"pulse"`
 	CreatedAt time.Time `json:"created_at"`
 }
 
 var (
-	ErrSystolicRequired = errors.New("systolic is required")
+	ErrSystolicRequired  = errors.New("systolic is required")
 	ErrDiastolicRequired = errors.New("diastolic is required")
-	ErrPulseRequired = errors.New("pulse is required")
+	ErrPulseRequired     = errors.New("pulse is required")
 )
 
 func NewBloodPressure(systolic int, diastolic int, pulse int) (*BloodPressure, error) {
 	bloodPressure := &BloodPressure{
-		ID: entity.NewID(),
-		Systolic: systolic,
+		ID:        entity.NewID(),
+		Systolic:  systolic,
 		Diastolic: diastolic,
-		Pulse: pulse,
+		Pulse:     pulse,
 		CreatedAt: time.Now(),
 	}
 	err := bloodPressure.Validate()

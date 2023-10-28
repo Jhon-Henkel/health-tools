@@ -8,21 +8,21 @@ import (
 )
 
 type BloodGlucose struct {
-	ID entity.ID `json:"id"`
-	BloodGlucose int `json:"blood_glucose"`
-	CreatedAt time.Time `json:"created_at"`
+	ID           entity.ID `json:"id"`
+	BloodGlucose int       `json:"blood_glucose"`
+	CreatedAt    time.Time `json:"created_at"`
 }
 
 var (
-	ErrIdInvalid = errors.New("id is invalid")
+	ErrIdInvalid            = errors.New("id is invalid")
 	ErrBloodGlucoseRequired = errors.New("blood_glucose is required")
 )
 
 func NewBloodGlucose(bloodGlucose int) (*BloodGlucose, error) {
 	glucose := &BloodGlucose{
-		ID: entity.NewID(),
+		ID:           entity.NewID(),
 		BloodGlucose: bloodGlucose,
-		CreatedAt: time.Now(),
+		CreatedAt:    time.Now(),
 	}
 	err := glucose.Validate()
 	if err != nil {

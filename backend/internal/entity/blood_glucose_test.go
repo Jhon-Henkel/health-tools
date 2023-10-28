@@ -8,7 +8,7 @@ import (
 
 func TestNewBloodGlucose(t *testing.T) {
 	bloodGlocose, err := NewBloodGlucose(100)
-	
+
 	assert.Nil(t, err)
 	assert.Equal(t, bloodGlocose.BloodGlucose, 100)
 	assert.NotEmpty(t, bloodGlocose.ID)
@@ -17,7 +17,7 @@ func TestNewBloodGlucose(t *testing.T) {
 
 func TestNewBloodGlucoseError(t *testing.T) {
 	bloodGlocose, err := NewBloodGlucose(0)
-	
+
 	assert.NotNil(t, err)
 	assert.Nil(t, bloodGlocose)
 }
