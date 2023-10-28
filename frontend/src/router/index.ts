@@ -4,11 +4,15 @@ import { RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '',
-    redirect: '/folder/Inbox'
+    redirect: '/glicemia'
   },
   {
-    path: '/folder/:id',
-    component: () => import ('../views/FolderPage.vue')
+    path: '/glicemia',
+    component: () => import('@/views/BloodGlucose.vue')
+  },
+  {
+    path: '/pressao',
+    component: () => import('@/views/BloodPressure.vue')
   }
 ]
 
