@@ -3,18 +3,22 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>
-          Últimos registros
+          Pressão
         </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-content color="light">
-        <ion-row>
+        <ion-row class="ion-padding-top">
           <ion-col>
             <ion-datetime-button datetime="datetime" />
             <ion-modal :keep-contents-mounted="true">
               <ion-datetime presentation="month-year" id="datetime" />
             </ion-modal>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
             <ion-list :inset="true">
               <ion-item>
                 <ion-label>Sis/ Dia</ion-label>
@@ -31,9 +35,13 @@
             </ion-list>
           </ion-col>
         </ion-row>
-        <ion-button class="ion-margin-horizontal ion-margin-top" expand="block" href="/pressao/registrar">
-          Inserir Novo Registro
-        </ion-button>
+        <ion-row>
+          <ion-col>
+            <ion-button class="ion-margin-horizontal ion-margin-top" expand="block" href="/pressao/registrar">
+              Inserir Novo
+            </ion-button>
+          </ion-col>
+        </ion-row>
       </ion-content>
     </ion-content>
   </ion-page>
@@ -79,7 +87,6 @@
 </script>
 
 <style scoped>
-
   ion-datetime {
     border-radius: 16px;
   }

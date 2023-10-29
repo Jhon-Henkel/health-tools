@@ -16,9 +16,6 @@
                 <ion-input label="Glicemia" type="number"/>
               </ion-item>
             </ion-list>
-            <ion-note color="medium" class="ion-margin-horizontal">
-              Preencha com os dados da sua última aferição.
-            </ion-note>
             <ion-button class="ion-margin-horizontal ion-margin-top" expand="block">
               Salvar
             </ion-button>
@@ -35,7 +32,6 @@
     IonHeader,
     IonInput,
     IonItem,
-    IonNote,
     IonToolbar,
     IonTitle,
     IonPage,
@@ -54,7 +50,6 @@
       IonHeader,
       IonInput,
       IonItem,
-      IonNote,
       IonToolbar,
       IonTitle,
       IonPage,

@@ -2,26 +2,32 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>
+        <ion-title class="ion-justify-contents-center">
           Glicemia
         </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-content color="light">
-        <ion-row>
+        <ion-row class="ion-padding-top">
           <ion-col>
             <ion-datetime-button datetime="datetime" />
             <ion-modal :keep-contents-mounted="true">
               <ion-datetime presentation="month-year" id="datetime" />
             </ion-modal>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
             <ion-list :inset="true">
               <ion-item>
-                <ion-label>Glicemia</ion-label>
+                <ion-label></ion-label>
+                <ion-label>mg/dL</ion-label>
                 <ion-label>Data</ion-label>
                 <ion-label>Hora</ion-label>
               </ion-item>
               <ion-item>
+                <ion-label></ion-label>
                 <ion-label>92</ion-label>
                 <ion-label>25/10</ion-label>
                 <ion-label>15:30</ion-label>
@@ -29,9 +35,13 @@
             </ion-list>
           </ion-col>
         </ion-row>
-        <ion-button class="ion-margin-horizontal ion-margin-top" expand="block" href="/glicemia/registrar">
-          Inserir Novo Registro
-        </ion-button>
+        <ion-row>
+          <ion-col>
+            <ion-button class="ion-margin-horizontal ion-margin-top" expand="block" href="/glicemia/registrar">
+              Inserir Novo
+            </ion-button>
+          </ion-col>
+        </ion-row>
       </ion-content>
     </ion-content>
   </ion-page>
@@ -77,7 +87,6 @@
 </script>
 
 <style scoped>
-
   ion-datetime {
     border-radius: 16px;
   }
