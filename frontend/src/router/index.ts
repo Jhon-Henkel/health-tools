@@ -3,16 +3,22 @@ import { RouteRecordRaw } from 'vue-router';
 import BloodPressureView from '@/views/BloodPressure/BloodPressureView.vue'
 import BloodPressureForm from '@/views/BloodPressure/BloodPressureForm.vue'
 import BloodGlucoseView from '@/views/BloodGlucose/BloodGlucoseView.vue'
+import BloodGlucoseForm from '@/views/BloodGlucose/BloodGlucoseForm.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '',
-    redirect: '/glicemia'
+    redirect: '/pressao'
   },
   {
     path: '/glicemia',
     name: 'BloodGlucoseView',
     component: BloodGlucoseView
+  },
+  {
+    path: '/glicemia/registrar',
+    name: 'BloodGlucoseForm',
+    component: BloodGlucoseForm
   },
   {
     path: '/pressao',
