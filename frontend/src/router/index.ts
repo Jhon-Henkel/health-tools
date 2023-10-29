@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
+import BloodPressureView from '@/views/BloodPressure/BloodPressureView.vue'
+import BloodPressureForm from '@/views/BloodPressure/BloodPressureForm.vue'
+import BloodGlucoseView from '@/views/BloodGlucose/BloodGlucoseView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -8,15 +11,18 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/glicemia',
-    component: () => import('@/views/BloodGlucose.vue')
+    name: 'BloodGlucoseView',
+    component: BloodGlucoseView
   },
   {
     path: '/pressao',
-    component: () => import('@/views/BloodPressure/BloodPressureView.vue')
+    name: 'BloodPressureView',
+    component: BloodPressureView
   },
   {
     path: '/pressao/registrar',
-    component: () => import('@/views/BloodPressure/BloodPressureForm.vue')
+    name: 'BloodPressureForm',
+    component: BloodPressureForm
   }
 ]
 
