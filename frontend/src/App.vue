@@ -3,11 +3,11 @@
     <ion-tabs>
       <ion-router-outlet />
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="home" href="/pressao">
+        <ion-tab-button tab="blood-pressure" href="/pressao">
           <ion-icon :icon="heartCircleOutline" />
           <ion-label>Pressão</ion-label>
         </ion-tab-button>
-        <ion-tab-button tab="radio" href="/glicemia">
+        <ion-tab-button tab="blood-glucose" href="/glicemia">
           <ion-icon :icon="waterOutline" />
           <ion-label>Glicemia</ion-label>
         </ion-tab-button>
